@@ -3,22 +3,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
-  <meta name="theme-color" content="#1a73e8" />
-  <meta name="description" content="La mappa interattiva della mia storia di viaggio" />
-  <title>I miei viaggi</title>
+  <meta name="theme-color" content="#0e1b2e" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="Atlas Me — la mappa interattiva di tutti i miei viaggi" />
+  <title>Atlas Me</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <meta name="apple-mobile-web-app-title" content="Viaggi" />
+  <meta name="apple-mobile-web-app-title" content="Atlas Me" />
+  <meta name="application-name" content="Atlas Me" />
   <meta name="format-detection" content="telephone=no" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g'%3E%3Cstop offset='0' stop-color='%23ef4444'/%3E%3Cstop offset='.55' stop-color='%23facc15'/%3E%3Cstop offset='1' stop-color='%2322c55e'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='30' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='32' r='8' fill='white'/%3E%3C/svg%3E" />
-  <script type="module" crossorigin src="./assets/index-DMuRdI3X.js"></script>
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/splash-828x1792.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1125x2436.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1170x2532.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1179x2556.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1284x2778.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1290x2796.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="icons/splash-750x1334.png" />
+  <link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="icons/splash-1242x2688.png" />
+  <script>
+    // tema prima del primo disegno (niente lampo bianco)
+    (function () { try {
+      var p = localStorage.getItem('tm.theme') || 'auto';
+      var d = p === 'dark' || (p === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+      document.documentElement.dataset.theme = d ? 'dark' : 'light';
+    } catch (e) {} })();
+  </script>
+  <style>#splash{z-index:200;background:radial-gradient(120% 80% at 50% 38%,#18304f 0%,#0e1b2e 55%,#08111f 100%);place-items:center;transition:opacity .55s,visibility .55s;display:grid;position:fixed;inset:0}#splash.out{opacity:0;visibility:hidden}#splash .sp{flex-direction:column;align-items:center;gap:18px;animation:.7s cubic-bezier(.2,.8,.2,1) both spIn;display:flex;transform:translateY(-4vh)}#splash svg{filter:drop-shadow(0 18px 40px #e8694f73);width:104px;height:104px}#splash b{letter-spacing:-.03em;color:#f7f1e4;font:750 30px/1 Inter Variable,Inter,system-ui,-apple-system,sans-serif}#splash small{color:#f7f1e48c;letter-spacing:.14em;text-transform:uppercase;font:500 13px system-ui,-apple-system,sans-serif}@keyframes spIn{0%{opacity:0;transform:translateY(-1vh)scale(.92)}}</style>
+  <script type="module" crossorigin src="./assets/index-CqYBexGb.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-BWaJ3C7D.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-BinD3tq4.css">
+  <link rel="stylesheet" crossorigin href="./assets/index-Tq0MkY07.css">
 </head>
 <body>
+  <div id="splash"><div class="sp">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><defs><linearGradient id="spg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#c45a3e"/><stop offset="1" stop-color="#ff7a60"/></linearGradient></defs><rect width="100" height="100" rx="23" fill="url(#spg)"/><path d="M50 19 82.3 79.3H71L50 38 29 79.3H17.7z" fill="#fff"/><path d="M39.6 60.6Q50 67.6 60.4 60.6" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="0 2.6"/><g transform="translate(64.6 57.6) rotate(58) scale(.36) translate(-12 -12)"><path fill="#e8694f" d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></g></svg>
+    <b>Atlas Me</b><small>I miei viaggi</small>
+  </div></div>
   <div id="app"></div>
 </body>
 </html>
