@@ -6,22 +6,22 @@
  * - Aggiornamento: ogni build cambia VERSION → il browser installa il nuovo SW, che si attiva subito
  *   (skipWaiting + clients.claim) e cancella le cache vecchie; la pagina mostra "Nuova versione disponibile".
  */
-const VERSION = 'ee47451eba82';
-const CACHE = 'viaggi-' + VERSION;
+const VERSION = '30d5ad113fe5';
+const CACHE = 'viaggi-audio2-' + VERSION;
 const PRECACHE = [
  "./",
  "./index.html",
- "./assets/index-Dkoprg2q.js",
+ "./assets/index-DGhZVTKG.js",
  "./assets/array-utils-flat-BL8Cekj1.js",
  "./assets/get-attribute-from-layouts-Dd2gixpo.js",
  "./assets/gpu-data-evaluator-DlNjxs5v.js",
- "./assets/player-CilXyOyU.js",
+ "./assets/player-DoFjF8mS.js",
  "./assets/rolldown-runtime-BWaJ3C7D.js",
  "./assets/sampleRoutes-Dd_EwmAv.js",
  "./assets/searoute-js-CxZB2jMd.js",
- "./assets/webgl-B7J0blD5.js",
- "./assets/webgl-device-DUJJ95oh.js",
- "./assets/webgpu-Dci6iZPT.js",
+ "./assets/webgl-BPgPJzhT.js",
+ "./assets/webgl-device-CwTgxWPq.js",
+ "./assets/webgpu-C33gQfJ8.js",
  "./assets/world-110m-CWAz-g9T.js",
  "./assets/index-C6R88p_x.css",
  "./assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
@@ -43,7 +43,25 @@ const PRECACHE = [
  "./icons/icon-512-v2.png",
  "./icons/icon-512.png",
  "./icons/icon-maskable-512-v2.png",
- "./icons/icon-maskable-512.png"
+ "./icons/icon-maskable-512.png",
+ "./audio/arrive.m4a",
+ "./audio/arrive.mp3",
+ "./audio/bus.m4a",
+ "./audio/bus.mp3",
+ "./audio/car.m4a",
+ "./audio/car.mp3",
+ "./audio/end.m4a",
+ "./audio/end.mp3",
+ "./audio/plane-up.m4a",
+ "./audio/plane-up.mp3",
+ "./audio/plane.m4a",
+ "./audio/plane.mp3",
+ "./audio/ship.m4a",
+ "./audio/ship.mp3",
+ "./audio/silence.m4a",
+ "./audio/silence.mp3",
+ "./audio/train.m4a",
+ "./audio/train.mp3"
 ];
 
 self.addEventListener('install', (event) => {
