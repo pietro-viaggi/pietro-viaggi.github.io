@@ -6,24 +6,24 @@
  * - Aggiornamento: ogni build cambia VERSION → il browser installa il nuovo SW, che si attiva subito
  *   (skipWaiting + clients.claim) e cancella le cache vecchie; la pagina mostra "Nuova versione disponibile".
  */
-const VERSION = '30d5ad113fe5';
-const CACHE = 'viaggi-audio2-' + VERSION;
+const VERSION = '9338e9be4c7f';
+const CACHE = 'viaggi-wrapped-' + VERSION;
 const PRECACHE = [
  "./",
  "./index.html",
- "./assets/index-DGhZVTKG.js",
+ "./assets/index-D-RPizX-.js",
  "./assets/array-utils-flat-BL8Cekj1.js",
  "./assets/get-attribute-from-layouts-Dd2gixpo.js",
  "./assets/gpu-data-evaluator-DlNjxs5v.js",
- "./assets/player-DoFjF8mS.js",
+ "./assets/player-lqJ8Qhlc.js",
  "./assets/rolldown-runtime-BWaJ3C7D.js",
  "./assets/sampleRoutes-Dd_EwmAv.js",
  "./assets/searoute-js-CxZB2jMd.js",
- "./assets/webgl-BPgPJzhT.js",
- "./assets/webgl-device-CwTgxWPq.js",
- "./assets/webgpu-C33gQfJ8.js",
+ "./assets/webgl-CW1nKb6e.js",
+ "./assets/webgl-device-Pcsi10wX.js",
+ "./assets/webgpu-Jj7yfOu4.js",
  "./assets/world-110m-CWAz-g9T.js",
- "./assets/index-C6R88p_x.css",
+ "./assets/index-keBM6Cah.css",
  "./assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
  "./assets/inter-cyrillic-wght-normal-DqGufNeO.woff2",
  "./assets/inter-greek-ext-wght-normal-DlzME5K_.woff2",
