@@ -6,24 +6,18 @@
  * - Aggiornamento: ogni build cambia VERSION → il browser installa il nuovo SW, che si attiva subito
  *   (skipWaiting + clients.claim) e cancella le cache vecchie; la pagina mostra "Nuova versione disponibile".
  */
-const VERSION = '1893f8781f0c';
+const VERSION = 'b364bf3a6c52';
 const CACHE = 'viaggi-wrapped-' + VERSION;
 const PRECACHE = [
  "./",
  "./index.html",
- "./assets/index-ClmtcwwE.js",
- "./assets/array-utils-flat-BL8Cekj1.js",
- "./assets/get-attribute-from-layouts-Dd2gixpo.js",
- "./assets/gpu-data-evaluator-DlNjxs5v.js",
- "./assets/player-Dodh0M9Q.js",
+ "./assets/index-gwgv4iTD.js",
+ "./assets/player-mF7xk-uX.js",
  "./assets/rolldown-runtime-BWaJ3C7D.js",
  "./assets/sampleRoutes-Dd_EwmAv.js",
  "./assets/searoute-js-CxZB2jMd.js",
- "./assets/webgl-BbOP2vco.js",
- "./assets/webgl-device-DrRyPEpl.js",
- "./assets/webgpu-DH4g5RfE.js",
  "./assets/world-110m-CWAz-g9T.js",
- "./assets/index-BU_NfcTH.css",
+ "./assets/index-D62tTG5O.css",
  "./assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
  "./assets/inter-cyrillic-wght-normal-DqGufNeO.woff2",
  "./assets/inter-greek-ext-wght-normal-DlzME5K_.woff2",
