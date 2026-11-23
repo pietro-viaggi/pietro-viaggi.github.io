@@ -6,18 +6,19 @@
  * - Aggiornamento: ogni build cambia VERSION → il browser installa il nuovo SW, che si attiva subito
  *   (skipWaiting + clients.claim) e cancella le cache vecchie; la pagina mostra "Nuova versione disponibile".
  */
-const VERSION = '6233336b3f5d';
+const VERSION = 'f88562b3be02';
 const CACHE = 'viaggi-wrapped-' + VERSION;
 const PRECACHE = [
  "./",
  "./index.html",
- "./assets/index-BpOfhyay.js",
- "./assets/player-hN0W7pRz.js",
+ "./assets/index-rqS0Fan-.js",
+ "./assets/player-qH9t9mDW.js",
+ "./assets/render-BC9WBxFA.js",
  "./assets/rolldown-runtime-BWaJ3C7D.js",
  "./assets/sampleRoutes-Dd_EwmAv.js",
  "./assets/searoute-js-CxZB2jMd.js",
  "./assets/world-110m-CWAz-g9T.js",
- "./assets/index-DlOoSYt6.css",
+ "./assets/index-QgAgRZiM.css",
  "./assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2",
  "./assets/inter-cyrillic-wght-normal-DqGufNeO.woff2",
  "./assets/inter-greek-ext-wght-normal-DlzME5K_.woff2",
